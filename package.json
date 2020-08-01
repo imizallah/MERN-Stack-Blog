@@ -3,16 +3,24 @@
     "version": "1.0.0",
     "description": "React validation a nd Authentication Boiler Plate",
     "main": "server.js",
+    "engine": {
+        "node": "14.6.0",
+        "npm": "6.14.7"
+    },
     "scripts": {
-        "start": "node server.js",
-        "backend": "nodemon server.js"
+        "start": "node server/server.js",
+        "backend": "nodemon server/server.js"
     },
     "author": "Imizallah",
     "license": "ISC",
     "dependencies": {
+        "bcrypt": "^5.0.0",
+        "bcryptjs": "^2.4.3",
         "body-parser": "^1.19.0",
         "cookie-parser": "^1.4.5",
         "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "moment": "^2.27.0",
         "mongoose": "^5.9.27"
     }
 }
