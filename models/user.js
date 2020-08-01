@@ -29,18 +29,16 @@ const userSchema = mongoose.Schema({
     history: {
         type: Array,
         default: []
-    },
-    image: String,
-    token: {
-        type: String,
-    },
-    tokenExp: {
-        type: Number
     }
+    // image: String,
+    // token: {
+    //     type: String,
+    // },
+    // tokenExp: {
+    //     type: Number
+    // }
 })
 
 const User = mongoose.model('user', userSchema);
 
 module.exports = { User }
-
-
